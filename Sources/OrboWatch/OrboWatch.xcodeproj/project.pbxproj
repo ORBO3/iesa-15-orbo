@@ -1,0 +1,572 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		52B9AE2B1BFCB4DF00B26427 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B9AE2A1BFCB4DF00B26427 /* AppDelegate.swift */; };
+		52B9AE2D1BFCB4DF00B26427 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B9AE2C1BFCB4DF00B26427 /* ViewController.swift */; };
+		52B9AE301BFCB4DF00B26427 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52B9AE2E1BFCB4DF00B26427 /* Main.storyboard */; };
+		52B9AE321BFCB4DF00B26427 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52B9AE311BFCB4DF00B26427 /* Assets.xcassets */; };
+		52B9AE351BFCB4DF00B26427 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52B9AE331BFCB4DF00B26427 /* LaunchScreen.storyboard */; };
+		52B9AE3A1BFCB4DF00B26427 /* OrboWatch WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 52B9AE391BFCB4DF00B26427 /* OrboWatch WatchKit App.app */; };
+		52B9AE401BFCB4DF00B26427 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52B9AE3E1BFCB4DF00B26427 /* Interface.storyboard */; };
+		52B9AE421BFCB4DF00B26427 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52B9AE411BFCB4DF00B26427 /* Assets.xcassets */; };
+		52B9AE491BFCB4DF00B26427 /* OrboWatch WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 52B9AE481BFCB4DF00B26427 /* OrboWatch WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		52B9AE501BFCB4DF00B26427 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B9AE4F1BFCB4DF00B26427 /* InterfaceController.swift */; };
+		52B9AE521BFCB4DF00B26427 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B9AE511BFCB4DF00B26427 /* ExtensionDelegate.swift */; };
+		52B9AE541BFCB4DF00B26427 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B9AE531BFCB4DF00B26427 /* NotificationController.swift */; };
+		52B9AE561BFCB4DF00B26427 /* GlanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B9AE551BFCB4DF00B26427 /* GlanceController.swift */; };
+		52B9AE581BFCB4DF00B26427 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B9AE571BFCB4DF00B26427 /* ComplicationController.swift */; };
+		52B9AE5A1BFCB4DF00B26427 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52B9AE591BFCB4DF00B26427 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		52B9AE3B1BFCB4DF00B26427 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52B9AE1F1BFCB4DF00B26427 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 52B9AE381BFCB4DF00B26427;
+			remoteInfo = "OrboWatch WatchKit App";
+		};
+		52B9AE4A1BFCB4DF00B26427 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52B9AE1F1BFCB4DF00B26427 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 52B9AE471BFCB4DF00B26427;
+			remoteInfo = "OrboWatch WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		52B9AE611BFCB4DF00B26427 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				52B9AE491BFCB4DF00B26427 /* OrboWatch WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52B9AE651BFCB4DF00B26427 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				52B9AE3A1BFCB4DF00B26427 /* OrboWatch WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		52B9AE271BFCB4DF00B26427 /* OrboWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OrboWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		52B9AE2A1BFCB4DF00B26427 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		52B9AE2C1BFCB4DF00B26427 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		52B9AE2F1BFCB4DF00B26427 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		52B9AE311BFCB4DF00B26427 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		52B9AE341BFCB4DF00B26427 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		52B9AE361BFCB4DF00B26427 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52B9AE391BFCB4DF00B26427 /* OrboWatch WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "OrboWatch WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		52B9AE3F1BFCB4DF00B26427 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		52B9AE411BFCB4DF00B26427 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		52B9AE431BFCB4DF00B26427 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52B9AE481BFCB4DF00B26427 /* OrboWatch WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "OrboWatch WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		52B9AE4E1BFCB4DF00B26427 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		52B9AE4F1BFCB4DF00B26427 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		52B9AE511BFCB4DF00B26427 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		52B9AE531BFCB4DF00B26427 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		52B9AE551BFCB4DF00B26427 /* GlanceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlanceController.swift; sourceTree = "<group>"; };
+		52B9AE571BFCB4DF00B26427 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		52B9AE591BFCB4DF00B26427 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		52B9AE5B1BFCB4DF00B26427 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		52B9AE241BFCB4DF00B26427 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52B9AE451BFCB4DF00B26427 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		52B9AE1E1BFCB4DF00B26427 = {
+			isa = PBXGroup;
+			children = (
+				52B9AE291BFCB4DF00B26427 /* OrboWatch */,
+				52B9AE3D1BFCB4DF00B26427 /* OrboWatch WatchKit App */,
+				52B9AE4C1BFCB4DF00B26427 /* OrboWatch WatchKit Extension */,
+				52B9AE281BFCB4DF00B26427 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		52B9AE281BFCB4DF00B26427 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				52B9AE271BFCB4DF00B26427 /* OrboWatch.app */,
+				52B9AE391BFCB4DF00B26427 /* OrboWatch WatchKit App.app */,
+				52B9AE481BFCB4DF00B26427 /* OrboWatch WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		52B9AE291BFCB4DF00B26427 /* OrboWatch */ = {
+			isa = PBXGroup;
+			children = (
+				52B9AE2A1BFCB4DF00B26427 /* AppDelegate.swift */,
+				52B9AE2C1BFCB4DF00B26427 /* ViewController.swift */,
+				52B9AE2E1BFCB4DF00B26427 /* Main.storyboard */,
+				52B9AE311BFCB4DF00B26427 /* Assets.xcassets */,
+				52B9AE331BFCB4DF00B26427 /* LaunchScreen.storyboard */,
+				52B9AE361BFCB4DF00B26427 /* Info.plist */,
+			);
+			path = OrboWatch;
+			sourceTree = "<group>";
+		};
+		52B9AE3D1BFCB4DF00B26427 /* OrboWatch WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				52B9AE3E1BFCB4DF00B26427 /* Interface.storyboard */,
+				52B9AE411BFCB4DF00B26427 /* Assets.xcassets */,
+				52B9AE431BFCB4DF00B26427 /* Info.plist */,
+			);
+			path = "OrboWatch WatchKit App";
+			sourceTree = "<group>";
+		};
+		52B9AE4C1BFCB4DF00B26427 /* OrboWatch WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				52B9AE4F1BFCB4DF00B26427 /* InterfaceController.swift */,
+				52B9AE511BFCB4DF00B26427 /* ExtensionDelegate.swift */,
+				52B9AE531BFCB4DF00B26427 /* NotificationController.swift */,
+				52B9AE551BFCB4DF00B26427 /* GlanceController.swift */,
+				52B9AE571BFCB4DF00B26427 /* ComplicationController.swift */,
+				52B9AE591BFCB4DF00B26427 /* Assets.xcassets */,
+				52B9AE5B1BFCB4DF00B26427 /* Info.plist */,
+				52B9AE4D1BFCB4DF00B26427 /* Supporting Files */,
+			);
+			path = "OrboWatch WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		52B9AE4D1BFCB4DF00B26427 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				52B9AE4E1BFCB4DF00B26427 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		52B9AE261BFCB4DF00B26427 /* OrboWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52B9AE661BFCB4DF00B26427 /* Build configuration list for PBXNativeTarget "OrboWatch" */;
+			buildPhases = (
+				52B9AE231BFCB4DF00B26427 /* Sources */,
+				52B9AE241BFCB4DF00B26427 /* Frameworks */,
+				52B9AE251BFCB4DF00B26427 /* Resources */,
+				52B9AE651BFCB4DF00B26427 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				52B9AE3C1BFCB4DF00B26427 /* PBXTargetDependency */,
+			);
+			name = OrboWatch;
+			productName = OrboWatch;
+			productReference = 52B9AE271BFCB4DF00B26427 /* OrboWatch.app */;
+			productType = "com.apple.product-type.application";
+		};
+		52B9AE381BFCB4DF00B26427 /* OrboWatch WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52B9AE621BFCB4DF00B26427 /* Build configuration list for PBXNativeTarget "OrboWatch WatchKit App" */;
+			buildPhases = (
+				52B9AE371BFCB4DF00B26427 /* Resources */,
+				52B9AE611BFCB4DF00B26427 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				52B9AE4B1BFCB4DF00B26427 /* PBXTargetDependency */,
+			);
+			name = "OrboWatch WatchKit App";
+			productName = "OrboWatch WatchKit App";
+			productReference = 52B9AE391BFCB4DF00B26427 /* OrboWatch WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		52B9AE471BFCB4DF00B26427 /* OrboWatch WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52B9AE5E1BFCB4DF00B26427 /* Build configuration list for PBXNativeTarget "OrboWatch WatchKit Extension" */;
+			buildPhases = (
+				52B9AE441BFCB4DF00B26427 /* Sources */,
+				52B9AE451BFCB4DF00B26427 /* Frameworks */,
+				52B9AE461BFCB4DF00B26427 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "OrboWatch WatchKit Extension";
+			productName = "OrboWatch WatchKit Extension";
+			productReference = 52B9AE481BFCB4DF00B26427 /* OrboWatch WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		52B9AE1F1BFCB4DF00B26427 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = ORBO;
+				TargetAttributes = {
+					52B9AE261BFCB4DF00B26427 = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+					52B9AE381BFCB4DF00B26427 = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+					52B9AE471BFCB4DF00B26427 = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+				};
+			};
+			buildConfigurationList = 52B9AE221BFCB4DF00B26427 /* Build configuration list for PBXProject "OrboWatch" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 52B9AE1E1BFCB4DF00B26427;
+			productRefGroup = 52B9AE281BFCB4DF00B26427 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				52B9AE261BFCB4DF00B26427 /* OrboWatch */,
+				52B9AE381BFCB4DF00B26427 /* OrboWatch WatchKit App */,
+				52B9AE471BFCB4DF00B26427 /* OrboWatch WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		52B9AE251BFCB4DF00B26427 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52B9AE351BFCB4DF00B26427 /* LaunchScreen.storyboard in Resources */,
+				52B9AE321BFCB4DF00B26427 /* Assets.xcassets in Resources */,
+				52B9AE301BFCB4DF00B26427 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52B9AE371BFCB4DF00B26427 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52B9AE421BFCB4DF00B26427 /* Assets.xcassets in Resources */,
+				52B9AE401BFCB4DF00B26427 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52B9AE461BFCB4DF00B26427 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52B9AE5A1BFCB4DF00B26427 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		52B9AE231BFCB4DF00B26427 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52B9AE2D1BFCB4DF00B26427 /* ViewController.swift in Sources */,
+				52B9AE2B1BFCB4DF00B26427 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52B9AE441BFCB4DF00B26427 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52B9AE541BFCB4DF00B26427 /* NotificationController.swift in Sources */,
+				52B9AE521BFCB4DF00B26427 /* ExtensionDelegate.swift in Sources */,
+				52B9AE581BFCB4DF00B26427 /* ComplicationController.swift in Sources */,
+				52B9AE501BFCB4DF00B26427 /* InterfaceController.swift in Sources */,
+				52B9AE561BFCB4DF00B26427 /* GlanceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		52B9AE3C1BFCB4DF00B26427 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 52B9AE381BFCB4DF00B26427 /* OrboWatch WatchKit App */;
+			targetProxy = 52B9AE3B1BFCB4DF00B26427 /* PBXContainerItemProxy */;
+		};
+		52B9AE4B1BFCB4DF00B26427 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 52B9AE471BFCB4DF00B26427 /* OrboWatch WatchKit Extension */;
+			targetProxy = 52B9AE4A1BFCB4DF00B26427 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		52B9AE2E1BFCB4DF00B26427 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				52B9AE2F1BFCB4DF00B26427 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		52B9AE331BFCB4DF00B26427 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				52B9AE341BFCB4DF00B26427 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		52B9AE3E1BFCB4DF00B26427 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				52B9AE3F1BFCB4DF00B26427 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		52B9AE5C1BFCB4DF00B26427 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		52B9AE5D1BFCB4DF00B26427 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		52B9AE5F1BFCB4DF00B26427 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				INFOPLIST_FILE = "OrboWatch WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.orbo.OrboWatch.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		52B9AE601BFCB4DF00B26427 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				INFOPLIST_FILE = "OrboWatch WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.orbo.OrboWatch.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		52B9AE631BFCB4DF00B26427 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = OrboWatch_WatchKit_Extension;
+				INFOPLIST_FILE = "OrboWatch WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.orbo.OrboWatch.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		52B9AE641BFCB4DF00B26427 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = OrboWatch_WatchKit_Extension;
+				INFOPLIST_FILE = "OrboWatch WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.orbo.OrboWatch.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		52B9AE671BFCB4DF00B26427 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = OrboWatch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.orbo.OrboWatch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		52B9AE681BFCB4DF00B26427 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = OrboWatch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.orbo.OrboWatch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		52B9AE221BFCB4DF00B26427 /* Build configuration list for PBXProject "OrboWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52B9AE5C1BFCB4DF00B26427 /* Debug */,
+				52B9AE5D1BFCB4DF00B26427 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52B9AE5E1BFCB4DF00B26427 /* Build configuration list for PBXNativeTarget "OrboWatch WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52B9AE5F1BFCB4DF00B26427 /* Debug */,
+				52B9AE601BFCB4DF00B26427 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		52B9AE621BFCB4DF00B26427 /* Build configuration list for PBXNativeTarget "OrboWatch WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52B9AE631BFCB4DF00B26427 /* Debug */,
+				52B9AE641BFCB4DF00B26427 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		52B9AE661BFCB4DF00B26427 /* Build configuration list for PBXNativeTarget "OrboWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52B9AE671BFCB4DF00B26427 /* Debug */,
+				52B9AE681BFCB4DF00B26427 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 52B9AE1F1BFCB4DF00B26427 /* Project object */;
+}
