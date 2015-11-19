@@ -1,0 +1,36 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<script src="http://js.leapmotion.com/leap-0.6.4.min.js"></script>
+	</head>
+
+	<body>
+	<div id="output"></div>
+		<script>
+		var output = document.getElementById('output');
+		var nameMap = ["thumb", "index", "middle", "ring", "pinky"];
+
+		Leap.loop(function (frame) {
+			
+			var fingers = frame.fingers;
+
+			if (fingers.length > 0) {
+				var firstFinger = fingers[0];
+			var extendedFingers = 0;
+			    for(var f = 0; f < fingers.length; f++){
+			        var finger = fingers[f];
+			        if(finger.extended) extendedFingers++;
+			}
+			console.log("Extended fingers: " + nameMap[extendedFingers]);
+
+				if (extendedFingers==0) {
+					output.innerHTML = "Serrure désactivée";
+				} else {
+					output.innerHTML = "Réessayer";
+				}
+			}
+
+		});
+		</script>
+	</body>
+	</html>

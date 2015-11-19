@@ -1,0 +1,76 @@
+<html>
+	<head>
+	<script src="http://js.leapmotion.com/leap-0.6.4.min.js"></script>
+	<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<style>
+		.highlight {border : 5px red solid !important;}
+		#slide { background-color: white; float: left; width: 100%; height: 100%; }
+		.grid div { width: 100px; height: 100px; float: left; border: 5px black solid; }
+	</style>
+	<script>
+		var output = document.getElementById('output');
+		var count = 0;
+		Leap.loop(function (frame) {
+
+			if (frame.gestures.length > 0 && count == 0) {
+				console.log(frame);
+				count++;
+			}
+
+	  		if(frame.valid && frame.gestures.length > 0){
+			    frame.gestures.forEach(function(gesture){
+			        switch (gesture.type){
+			          case "circle":
+			              console.log("Circle Gesture");
+			              break;
+			          case "keyTap":
+			              console.log("Key Tap Gesture");
+			              break;
+			          case "screenTap":
+			              console.log("Screen Tap Gesture");
+			              break;
+			          case "swipe":
+			              console.log("Swipe Gesture");
+
+							var isHorizontal = Math.abs(gesture.direction[0]) > Math.abs(gesture.direction[1]);
+							var $curr = $('.highlight');
+
+					          if(isHorizontal){
+					              if(gesture.direction[0] > 0){
+					                  swipeDirection = "right";
+					                  console.log("Swipe Gesture right");
+										$curr.next().addClass('highlight');
+					              } else {
+					                  swipeDirection = "left";
+					                     console.log("Swipe Gesture left");
+					                     $curr.prev().addClass('highlight');
+					              }
+					          } else { //vertical
+					              if(gesture.direction[1] > 0){
+					                  swipeDirection = "up";
+					                     console.log("Swipe Gesture up");
+					              } else {
+					                  swipeDirection = "down";
+					                     console.log("Swipe Gesture down");
+					              }                  
+					          }
+					          console.log(swipeDirection)
+			              break;
+			        }
+			    });
+			  }
+
+		});
+	</script>
+	</head>
+	<body>
+		<h1>Console du navigateur</h1>
+		<div class="grid">
+			<div id="d0_0"></div><div id="d1_0"></div><div id="d2_0"></div><div id="d3_0"></div><div id="d4_0"></div><br clear="both">
+			<div id="d0_1"></div><div id="d1_1"></div><div id="d2_1"></div><div id="d3_1"></div><div id="d4_1"></div><br clear="both">
+			<div id="d0_2"></div><div id="d1_2"></div><div id="d2_2" class="highlight"></div><div id="d3_2"></div><div id="d4_2"></div><br clear="both">
+			<div id="d0_3"></div><div id="d1_3"></div><div id="d2_3"></div><div id="d3_3"></div><div id="d4_3"></div><br clear="both">
+			<div id="d0_4"></div><div id="d1_4"></div><div id="d2_4"></div><div id="d3_4"></div><div id="d4_4"></div><br clear="both">
+		</div>
+	</body>
+</html>
